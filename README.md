@@ -50,7 +50,7 @@ The 25 Days of Makermas is a Raspberry Pi Pico kit consiting of 25 projects that
    1. Install Thonny
    2. Download Pi Pico Firmware
    3. Run Test Program
-2. [The Pi Pico Pinout](#day1pinout)
+2. [The Pi Pico Pinout](#day1_pinout)
    1. Pinout
    2. Identify GPIO pin for LED
 3. [Controlling the onboard LED](#day1_demo)
