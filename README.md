@@ -54,3 +54,9 @@ The 25 Days of Makermas is a Raspberry Pi Pico kit consiting of 25 projects that
   
 ### Thonny IDE
 Go to the [Thonny](https://thonny.org/) website and download the free IDE. Thonny was chosen because it has features that make it easier to program with the pico and installing the firmware.
+
+After opening Thonny, go to _Run_ -> _Configure Interpreter_                                                                   </br> <img height = "350" src = "Image/Thonny/Main_Page.jpg"></br> 
+From the Interpreter Menu Select _MicroPython (Raspberry Pi Pico)_ and click on __Install or update MicroPython__              </br> <img height = "350" src = "Image/Thonny/Options.jpg"> </br> 
+Copy the following settings to install the Pi Pico Firmware. _If you have a different Pico model, choose the proper variant._  </br> <img height = "350" src = "Image/Thonny/Firmware_Settings.jpg"></br> 
+The Pico should be ready to go.
+
