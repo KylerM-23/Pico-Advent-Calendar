@@ -3,7 +3,7 @@
 ## Introduction
 The 25 Days of Makermas is a Raspberry Pi Pico kit consiting of 25 projects that serve as an introduction to programming and controlling devices with a Raspberry Pi Pico. </br>
 
-[Booklet WIP](https://docs.google.com/document/d/1rmNjlnt3vpmemfZ5pnnCj9qUnz_O2xRp1bQ-7SMrb30/edit?usp=sharing) </br> 
+[Booklet WIP](https://docs.google.com/document/d/1rmNjlnt3vpmemfZ5pnnCj9qUnz_O2xRp1bQ-7SMrb30/edit?usp=sharing) </br> </br> 
 <img height = "350" src = "Image/Pi_Pico_Advent_Calendar.jpg"></br> 
  
 ## Parts Included:
@@ -145,73 +145,74 @@ Day 11 introduces analog inputs and reading them with the ADC on the pico. A pot
 
 </br> 
 
-## Day 12: Setup <a name="day12"></a>
-Day 3 invovles controlling an LED with the GPIO pins and explaining GPIO pins in a little more detail in addition to the various methods to control the LED.
+## Day 12: PWM <a name="day12"></a>
+Day 12 introduces PWM and how to creates an effective analog voltage for us to control devices like an LED.
 
 </br> 
 
-## Day 13: Setup <a name="day13"></a>
-Day 3 invovles controlling an LED with the GPIO pins and explaining GPIO pins in a little more detail in addition to the various methods to control the LED.
+## Day 13: Rainbow RGB LED <a name="day13"></a>
+Day 13 sees PWM used with the RGB LED to create various colors and sweep through the visible color spectrum.
 
 </br> 
 
-## Day 14: Setup <a name="day14"></a>
-Day 3 invovles controlling an LED with the GPIO pins and explaining GPIO pins in a little more detail in addition to the various methods to control the LED.
+## Day 14: Servo Motor <a name="day14"></a>
+Day 14 utilizes PWM to control a servo motor and walks through the process of creating the code needed to control PWM devices.
 
 </br> 
 
-## Day 15: Setup <a name="day15"></a>
-Day 3 invovles controlling an LED with the GPIO pins and explaining GPIO pins in a little more detail in addition to the various methods to control the LED.
+## Day 15: Passive Buzzer <a name="day15"></a>
+Day 15 sees the user creating a music by using PWM to produce different pitched notes.
 
 </br> 
 
-## Day 16: Setup <a name="day16"></a>
-Day 3 invovles controlling an LED with the GPIO pins and explaining GPIO pins in a little more detail in addition to the various methods to control the LED.
+## Day 16: PIR Motion Sensor <a name="day16"></a>
+Day 16 introduces a PIR motion sensor and uses it to detect motion nearby.
 
 </br> 
 
-## Day 17: Setup <a name="day17"></a>
-Day 3 invovles controlling an LED with the GPIO pins and explaining GPIO pins in a little more detail in addition to the various methods to control the LED.
+## Day 17: Ultrasonic Sensor <a name="day17"></a>
+Day 17 introduces the ultrasonic distance sensor.
 
 </br> 
 
-## Day 18: Setup <a name="day18"></a>
-Day 3 invovles controlling an LED with the GPIO pins and explaining GPIO pins in a little more detail in addition to the various methods to control the LED.
+## Day 18: Proimity Gate <a name="day18"></a>
+Day 18 allows the user to create an arm gate that opens when the ultrasonic sensor and or motion sensor detect someone approaching it. Day 18 comes with a popsicle stick and rubber band to create the "arm".
 
 </br> 
 
-## Day 19: Setup <a name="day19"></a>
-Day 3 invovles controlling an LED with the GPIO pins and explaining GPIO pins in a little more detail in addition to the various methods to control the LED.
+## Day 19: Photoresistor <a name="day19"></a>
+Day 19 introduces the photoresistor and how to estimate the amount of light to control other devices.
 
 </br> 
 
-## Day 20: Setup <a name="day20"></a>
-Day 3 invovles controlling an LED with the GPIO pins and explaining GPIO pins in a little more detail in addition to the various methods to control the LED.
+## Day 20: Thermistor <a name="day20"></a>
+Day 20 introduces the thermistor and how to measure the ambient temperature.
 
 </br> 
 
-## Day 21: Setup <a name="day21"></a>
-Day 3 invovles controlling an LED with the GPIO pins and explaining GPIO pins in a little more detail in addition to the various methods to control the LED.
+## Day 21: Snowflake Display <a name="day21"></a>
+Day 21 introduces the 74HC595 shift register to control multiple LEDs (snowflake display) with less pins. 
 
 </br> 
 
-## Day 22: Setup <a name="day22"></a>
-Day 3 invovles controlling an LED with the GPIO pins and explaining GPIO pins in a little more detail in addition to the various methods to control the LED.
+## Day 22: 7-Segment Display <a name="day22"></a>
+Day 22 has the user daisy chain shift registers to control multiple LED displays. The LED display for ths lesson is a 7-segment display.
 
 </br> 
 
-## Day 23: Setup <a name="day23"></a>
-Day 3 invovles controlling an LED with the GPIO pins and explaining GPIO pins in a little more detail in addition to the various methods to control the LED.
+## Day 23: TMP1075 <a name="day23"></a>
+Day 23 introduces I2C devices and uses the TMP1075 to measure temperature.
 
 </br> 
 
-## Day 24: Setup <a name="day24"></a>
-Day 3 invovles controlling an LED with the GPIO pins and explaining GPIO pins in a little more detail in addition to the various methods to control the LED.
+## Day 24: 1602 LCD <a name="day24"></a>
+Day 24 introduces the 1602 LCD and using multiple I2C devices on the same bus.
 
 </br> 
 
-## Day 25: Setup <a name="day25"></a>
-Day 3 invovles controlling an LED with the GPIO pins and explaining GPIO pins in a little more detail in addition to the various methods to control the LED.
+## Day 25: Spread Holiday Cheer <a name="day25"></a>
+On Day 25 you must express your holiday cheer. How you do so is left to you. You have plenty of tools. Good luck! </br>
+To give you a place to start. One idea is to have a light show with the snowflake display while Christmas music plays on the buzzer (you can also control both buzzers).
 
 </br> 
 #Thanks
