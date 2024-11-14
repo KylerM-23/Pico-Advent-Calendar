@@ -1,6 +1,6 @@
 from machine import Pin, PWM
-from day18.Ultrasonic_Sensor import *
-from day18.Servo import *
+from Ultrasonic_Sensor import *
+from Servo import *
 import time
 
 step_size = 10
