@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,7.0.5*%
+%TF.CreationDate,2024-09-14T15:13:57-07:00*%
+%TF.ProjectId,advent_calendar,61647665-6e74-45f6-9361-6c656e646172,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 7.0.5) date 2024-09-14 15:13:57*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.100000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X89500000Y-41500000D02*
+X229250000Y-41500000D01*
+X229250000Y-128000000D01*
+X89500000Y-128000000D01*
+X89500000Y-41500000D01*
+M02*

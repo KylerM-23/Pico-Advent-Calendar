@@ -1,0 +1,31 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 0d301425-d5e3-41b7-bb0a-75c1f2ba03d8)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 158.75 44.45) (size 30.48 41.91) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 23990278-f12f-46ce-8fc6-37e27601e098)
+    (property "Sheetname" "Pico" (at 158.75 43.7384 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "untitled.kicad_sch" (at 158.75 86.9446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "adventcalednar"
+        (path "/0d301425-d5e3-41b7-bb0a-75c1f2ba03d8" (page "2"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
