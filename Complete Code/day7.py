@@ -29,7 +29,7 @@ def alarm_change(pin):
     
     LED.value(alarm_state)		#change the LED
 
-SW.irq(trigger=Pin.IRQ_FALLING | Pin.IRQ_RISING, handler = alarm_change)#, hard = True)
+SW.irq(trigger=Pin.IRQ_FALLING | Pin.IRQ_RISING, handler = alarm_change)
 
 while(True):
     if (alarm_state and (utime.time() > (timer + alarm_time))):
