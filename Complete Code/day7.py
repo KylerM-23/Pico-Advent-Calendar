@@ -1,34 +1,41 @@
 from machine import Pin
-import time, random
+import utime
 
-LED = Pin(2, Pin.OUT) 		#setup the LED as an output
-TS = Pin(15, Pin.IN) 		#setup the slide switch as an input
+LED = Pin(2, Pin.OUT)    	     #setup the LED as an output
+SW = Pin(3, Pin.IN, Pin.PULL_DOWN) #setup the Slide Switch as an input
+Buzzer = Pin(10, Pin.OUT) 	#setup the buzzer
 
-ts_read = 0
-taps = 0
-playing = False
+alarm_state = False #off by default
+alarm_time = 10
+timer = utime.time()
 
-def score(pin):
-    global taps, playing
+irq_timer = utime.ticks_ms()
+irq_cooldown = 50 #500 ms cooldown
+debounce_time = 10
+
+LED.value(0)          #change the LED
+
+def alarm_change(pin):
+    global alarm_state, timer, irq_timer
     
-    if playing:
-        taps += 1
-        LED.toggle()		#change the LED
+    if (utime.ticks_ms() - irq_timer > irq_cooldown):
+        irq_timer = utime.ticks_ms()
+    else:
+        return
     
-TS.irq(trigger=Pin.IRQ_FALLING,handler = score)
+    utime.sleep_ms(debounce_time)
+    alarm_state = SW.value()
+    timer = utime.time()
+    
+    LED.value(alarm_state)		#change the LED
+
+SW.irq(trigger=Pin.IRQ_FALLING | Pin.IRQ_RISING, handler = alarm_change)#, hard = True)
 
 while(True):
-    playing = False
-    taps = 0
-    print("Ready")
-    time.sleep(1)		#wait
-    print("Set")
-    
-    time.sleep(random.randint(1,4))		#wait
-    playing = True
-    print("GO!")
-    
-    time.sleep(10)		#wait
-    print("You tapped:", taps, "times!")
-    time.sleep(1)
-
+    if (alarm_state and (utime.time() > (timer + alarm_time))):
+        for i in range(4):
+            Buzzer.value(1)
+            utime.sleep(0.1)
+            Buzzer.value(0)
+            utime.sleep(0.2)
+        timer = utime.time()

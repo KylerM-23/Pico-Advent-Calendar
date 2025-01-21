@@ -1,16 +1,33 @@
 from machine import Pin
-import time
+import time, random
 
-Buzzer = Pin(10, Pin.OUT) 	#setup the buzzer
-Slider = Pin(3, Pin.IN, Pin.PULL_DOWN) #setup the Slide Switch as an input
+LED = Pin(2, Pin.OUT) 		#setup the LED as an output
+TS = Pin(15, Pin.IN) 		#setup the slide switch as an input
 
-while True:
-    if(Slider.value() == 1):
-        Buzzer.value(1)			#toggle the state of the LED pin
-        time.sleep(0.1)
-        Buzzer.value(0)
-        time.sleep(2)
-    else:
-        Buzzer.value(0) 
+ts_read = 0
+taps = 0
+playing = False
 
+def score(pin):
+    global taps, playing
+    
+    if playing:
+        taps += 1
+        LED.toggle()		#change the LED
+    
+TS.irq(trigger=Pin.IRQ_FALLING,handler = score)
 
+while(True):
+    playing = False
+    taps = 0
+    print("Ready")
+    time.sleep(1)		#wait
+    print("Set")
+    
+    time.sleep(random.randint(1,4))		#wait
+    playing = True
+    print("GO!")
+    
+    time.sleep(10)		#wait
+    print("You tapped:", taps, "times!")
+    time.sleep(1)

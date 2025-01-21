@@ -1,13 +1,16 @@
 from machine import Pin
 import time
 
-LED = Pin(2, Pin.OUT)    	     	#setup the LED as an output
-BTN = Pin(7, Pin.IN)         		#setup the push button as an input
-SW 	= Pin(3, Pin.IN, Pin.PULL_DOWN) #setup the Slide Switch as an input
+Buzzer = Pin(10, Pin.OUT) 	#setup the buzzer
+BTN = Pin(7, Pin.IN) 		#setup the button as an input
 
-while(True):
-    if(SW.value() == 1):
-        LED.value(BTN.value())     	#change the LED based on the button
-    else:
-        LED.value(0)     			#turn the LED off
-	time.sleep(0.1)   	           	#wait
+pressed = False
+
+while True:
+    if(BTN.value() == 1 and pressed == False):
+        Buzzer.value(1)        	#toggle the state of the LED pin
+        pressed = True
+    elif(BTN.value() == 0 and pressed == True):
+        Buzzer.value(0)        	#toggle the state of the LED pin
+        time.sleep(1)
+        pressed = False
