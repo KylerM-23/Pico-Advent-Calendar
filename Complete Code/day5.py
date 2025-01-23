@@ -14,5 +14,4 @@ while True:
         timer = time.time()
     elif(BTN.value() == 0 and pressed == True):
         Buzzer.value(0)        	#turn off the buzzer
-        time.sleep(1)
         pressed = False
